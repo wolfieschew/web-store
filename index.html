@@ -2,13 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/wolfies.png" />
-    <!-- Link Father Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <!-- Link Style CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Wolfies | Store</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
     <!-- Font Dari Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,154 +13,79 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
       rel="stylesheet"
     />
-
-    <title>Wolfies | Store</title>
+    <!-- feathericons -->
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <!-- Navbar 1 Logo -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo">Wolfies <span>Store</span>.</a>
-
-      <!-- Navbar 2 Menu -->
+      <a href="#" class="navbar-logo">Wolfies <span>Store</span></a>
       <div class="navbar-nav">
         <a href="#">Home</a>
-        <a href="#about">Tentang Kami</a>
-        <a href="#feedback">Testimoni</a>
-        <a href="#menu">Layanan</a>
-        <a href="#contact">Kontak Admin</a>
+        <a href="#aboutus">Tentang Kami</a>
+        <a href="#product">Produk</a>
+        <a href="#contact">Kontak Kami</a>
       </div>
 
-      <!-- Navbar 3 Icons -->
       <div class="navbar-extra">
-        <a class="hidden-logo" href="#" id="search"
-          ><i data-feather="search"></i
-        ></a>
-        <a class="hidden-logo" href="#" id="shopping-cart"
-          ><i data-feather="shopping-cart"></i
-        ></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
-
-    <!-- Content Hero Section -->
+    <!-- Section Home -->
     <section class="hero" id="home">
-      <main class="content">
-        <h1>Selamat Datang Di Website Wolfies <span>Chew Store</span></h1>
+      <div class="content">
+        <h1>
+          Hi👋 Selamat Datang <br />Di Website <span>Wolfies Chew Store</span>
+        </h1>
         <p>
-          Kami Menjual Berbagai Layanan Premium Digital Dan Layanan Cloud
-          Gaming.
+          Menyediakan Berbagai Layanan Aplikasi Premium Dan Cloud Gaming Service
+          Termurah
         </p>
-      </main>
+        <a class="btn-hero" href="#product">Buat Pesanan</a>
+      </div>
     </section>
-
     <!-- Section Tentang Kami -->
-    <section id="about" class="about">
-      <h2><span>Tentang</span> Kami</h2>
+    <section class="aboutus" id="aboutus">
+      <h2>Mengapa Harus Di <span>Wolfies Chew Store?</span></h2>
+      <p>
+        Wolfies_Chew.Store sudah aktif sejak Tahun 2022 pada Platform E-Comerce
+        Shoppe Dan Sudah Menjual Hingga 2000+ Pesanan.
+      </p>
       <div class="row">
-        <div class="about-img">
-          <img src="img/wolfies2.png" alt="Tentang Kami" />
-        </div>
         <div class="content">
-          <h3>Mengapa Harus di Wolfies Chew Store?</h3>
+          <img src="img/lightning.png" />
           <p>
-            wolfies_chew.store sudah aktif sejak Tahun 2022 pada Platform
-            E-Comerce Shoppe Dan Sudah Menjual Hingga 1000+ Pesanan.
-          </p>
-          <p>
-            Berlangganan di kami, di pastikan Aman, Proses yang Cepat Dan
-            Pastinya Murah Dan Bergaransi!.
+            Proses Yang Cepat Estimasi 1 - 3 Menit Untuk Memproses Langganan
+            Premium Kamu
           </p>
         </div>
       </div>
-    </section>
-
-    <!-- Section Testimoni -->
-    <section id="feedback" class="feedback">
-      <h2><span>Testimoni</span> Pembeli</h2>
-      <p>Apa Kata Mereka Tentang Kami?</p>
       <div class="row">
-        <div class="box-content">
-          <figure class="snip1533">
-            <figcaption>
-              <blockquote>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <p>
-                  Mantap, pelayanan bagus.. Adminnya juga baik dan fast
-                  response.. Rekomendasi banget..
-                </p>
-              </blockquote>
-              <h3>edowiyono</h3>
-              <h4>Pengguna Shoppe</h4>
-            </figcaption>
-          </figure>
-          <figure class="snip1533">
-            <figcaption>
-              <blockquote>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <p>
-                  Beli disini dijamin 100% Aman Udah 3 bulan langganan aman aman
-                  aja akunnya
-                </p>
-              </blockquote>
-              <h3>trystan_depriadi</h3>
-              <h4>Pengguna Shoppe</h4>
-            </figcaption>
-          </figure>
-          <figure class="snip1533">
-            <figcaption>
-              <blockquote>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <p>
-                  Recommended pokoknya, sellernya sangat fast respon, geforce
-                  now nya juga aman 👍
-                </p>
-              </blockquote>
-              <h3>dave_mf</h3>
-              <h4>Pengguna Shoppe</h4>
-            </figcaption>
-          </figure>
-          <figure class="snip1533">
-            <figcaption>
-              <blockquote>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <i data-feather="star" class="fill-star-full-feedback"></i>
-                <p>
-                  Order di jam malam tetap dilayani dg baik, very satisfied. 😁
-                  keep it up min
-                </p>
-              </blockquote>
-              <h3>rasmaadhi</h3>
-              <h4>Pengguna Shoppe</h4>
-            </figcaption>
-          </figure>
+        <div class="content">
+          <img src="img/Shield.png" />
+          <p>
+            Menawarkan Garansi setiap Produk yang di Beli, jadi Di Pastikan
+            Setiap Produk dapat berkerja tanpa kendala
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="content">
+          <img src="img/star2.png" />
+          <p>
+            Di Percaya oleh 2000+ Pembeli yang sudah Bertranksaksi dan
+            Berlangganan Di Toko Kami
+          </p>
         </div>
       </div>
     </section>
-    <!-- akhir testimoni -->
-
-    <!-- Section Layanan -->
-    <section id="menu" class="menu">
-      <h2><span>Layanan</span> Produk</h2>
-      <p>List Layanan Produk Kami</p>
-      <!-- Card Layanan -->
+    <!-- section produk -->
+    <section class="product" id="product">
+      <h2>Produk <span>Kami</span></h2>
+      <p>Layanan Produk Kami Yang Tersedia</p>
       <div class="row">
         <div class="menu-card">
           <img
+            class="logo"
             src="img/geforce now.png"
             alt="geforcenow"
             class="menu-card-img"
@@ -174,13 +96,56 @@
           <i data-feather="star" class="fill-star-full"></i>
           <i data-feather="star" class="fill-star-full"></i>
           <i data-feather="star" class="fill-star-full"></i>
-          <p class="menu-card-price"></p>
-          <button onclick="openPopup()" class="btn-menu">Details</button>
+          <p class="menu-card-price">Rp125.000 ~ Rp215.000</p>
+          <div class="button">
+            <a
+              href="https://shopee.co.id/Cloud-Gaming-GeForce-Now-Singapore-StarHub-1-Bulan-i.290593874.10196236442?xptdk=e128e3fa-5d83-4f1d-b2a7-7831ecb2275f"
+            >
+              <img class="icons" src="img/shoppe.png" height="30px" />
+            </a>
+            <a
+              href="https://wa.me/6283133709824?text=Hallo%20min%20apakah%20produk%20GeForce%20Now%20nya%20masih%20ada%20?"
+            >
+              <img class="icons" src="img/whatsapp.png" height="30px" />
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="row">
         <div class="menu-card">
           <img
+            class="logo"
+            src="img/surfshark.png"
+            alt="geforcenow"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">Surfshark VPN Premium</h3>
+          <i data-feather="star" class="fill-star-full"></i>
+          <i data-feather="star" class="fill-star-full"></i>
+          <i data-feather="star" class="fill-star-full"></i>
+          <i data-feather="star" class="fill-star-full"></i>
+          <i data-feather="star" class="fill-star-full"></i>
+          <p class="menu-card-price">Rp50.000 ~ Rp180.000</p>
+          <div class="button">
+            <a
+              href="https://shopee.co.id/Surf5h4rk-Unlimited-Device-Termurah-Bergaransi-i.290593874.15391773365?xptdk=b4d6a78c-b643-497e-8cc4-914464193353"
+            >
+              <img class="icons" src="img/shoppe.png" height="30px" />
+            </a>
+            <a
+              href="https://wa.me/6283133709824?text=Hallo%20min%20apakah%20produk%20Surfshark%20Premium%20nya%20masih%20ada%20?"
+            >
+              <img class="icons" src="img/whatsapp.png" height="30px" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="menu-card">
+          <img
+            class="logo"
             src="img/youtube.png"
-            alt="youtubepremium"
+            alt="geforcenow"
             class="menu-card-img"
           />
           <h3 class="menu-card-title">YouTube Premium</h3>
@@ -188,170 +153,26 @@
           <i data-feather="star" class="fill-star-full"></i>
           <i data-feather="star" class="fill-star-full"></i>
           <i data-feather="star" class="fill-star-full"></i>
-          <i data-feather="star" class="fill-star"></i>
-          <p class="menu-card-price"></p>
-          <button onclick="openPopup1()" class="btn-menu">Details</button>
-        </div>
-        <div class="menu-card">
-          <img src="img/surfshark.png" alt="surfshark" class="menu-card-img" />
-          <h3 class="menu-card-title">Surfshark VPN</h3>
           <i data-feather="star" class="fill-star-full"></i>
-          <i data-feather="star" class="fill-star-full"></i>
-          <i data-feather="star" class="fill-star-full"></i>
-          <i data-feather="star" class="fill-star-full"></i>
-          <i data-feather="star" class="fill-star"></i>
-          <p class="menu-card-price"></p>
-          <button onclick="openPopup2()" class="btn-menu">Details</button>
-        </div>
-        <div class="menu-card">
-          <img src="img/dropbox.png" alt="dropbox" class="menu-card-img" />
-          <h3 class="menu-card-title">Dropbox Premium</h3>
-          <i data-feather="star" class="fill-star-full"></i>
-          <i data-feather="star" class="fill-star-full"></i>
-          <i data-feather="star" class="fill-star-full"></i>
-          <i data-feather="star" class="fill-star-full"></i>
-          <i data-feather="star" class="fill-star"></i>
-          <p class="menu-card-price"></p>
-          <button onclick="openPopup3()" class="btn-menu">Details</button>
+          <p class="menu-card-price">Rp3.000 ~ Rp5.000</p>
+          <div class="button">
+            <a href="">
+              <img
+                class="icons-unavailable"
+                src="img/shoppe.png"
+                height="30px"
+              />
+            </a>
+            <a
+              href="https://wa.me/6283133709824?text=Hallo%20min%20apakah%20produk%20YouTube%20Premium%20nya%20masih%20ada%20?"
+            >
+              <img class="icons" src="img/whatsapp.png" height="30px" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- pop up 1 -->
-    <div id="popup" class="popup">
-      <div class="popup-content">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <h2>GeForce Now Singapore</h2>
-        <p>
-          GeForce Now StarHub Singapore adalah sebuah layanan yang dimana
-          membuat kita untuk bermain game game sekelas Triple AAA Pada Device
-          yang Rendah. Hanya Bermodalkan Kecepatan Internet Stabil aja udah bisa
-          libas dengan settingan Ultra FHD 60FPS Seperto Genshin Impact,
-          Fortnite, Apex Legends Dan Masih Banyak lagi Tersedia di App GeForce
-          Now. Yuk Checkout Sekarang Juga
-        </p>
-        <p class="desc-var">
-          <span>Varian Yang Tersedia :</span><br />
-          Lite : Rp125.000<br />
-          Premium : Rp155.000<br />
-          Premium Pro : Rp190.000
-        </p>
-        <a href="https://shopee.co.id/product/290593874/10196236442/"
-          ><button class="btn-popup">Order Via Shoppe</button></a
-        >
-        <a
-          href="https://wa.me/6283133709824?text=Hai%20Min%20Apakah%20Produk%20GeForceNow%20Masih%20Ada?"
-          ><button class="btn-popup">Order Via WhatsApp</button></a
-        >
-        <div class="payment">
-          <p>Menerima Pembayaran Melalui :</p>
-          <img class="payment-logo" src="img/ewalet dana.png" />
-          <img class="payment-logo" src="img/ewalet ovo.png" />
-          <img class="payment-logo" src="img/ewalet shoppe.png" />
-        </div>
-      </div>
-    </div>
-    <!-- end of pop up -->
-    <!-- pop up 2 -->
-    <div id="popup1" class="popup">
-      <div class="popup-content">
-        <span class="close" onclick="closePopup1()">&times;</span>
-        <h2>YouTube Premium</h2>
-        <p>
-          YouTube Premium adalah layanan berlangganan bulanan yang ditawarkan
-          oleh YouTube. Dengan berlangganan YouTube Premium, pengguna dapat
-          menikmati sejumlah manfaat seperti Bebas menonton tanpa ganguan iklan,
-          Bisa Putar video di luar app YouTube, Bisa memutar video saat hp dalam
-          keadaan mati.
-        </p>
-        <p class="desc-var">
-          <span>Varian Yang Tersedia :</span><br />
-          1 Bulan Premium : Rp5.000<br />
-          4 Bulan Premium : Rp13.000<br />
-          6 Bulan Premium : Rp25.000
-        </p>
-        <a href="https://shopee.co.id/product/290593874/18576056584/"
-          ><button class="btn-popup">Order Via Shoppe</button></a
-        >
-        <a
-          href="https://wa.me/6283133709824?text=Hai%20Min%20Apakah%20Produk%20YouTube%20Premium%20Masih%20Ada?"
-          ><button class="btn-popup">Order Via WhatsApp</button></a
-        >
-        <div class="payment">
-          <p>Menerima Pembayaran Melalui :</p>
-          <img class="payment-logo" src="img/ewalet dana.png" />
-          <img class="payment-logo" src="img/ewalet ovo.png" />
-          <img class="payment-logo" src="img/ewalet shoppe.png" />
-        </div>
-      </div>
-    </div>
-    <!-- end of pop up 2 -->
-    <!-- pop up 3 -->
-    <div id="popup2" class="popup">
-      <div class="popup-content">
-        <span class="close" onclick="closePopup2()">&times;</span>
-        <h2>Surfshark VPN</h2>
-        <p>
-          Surfshark VPN adalah layanan Virtual Private Network (VPN) yang
-          dirancang untuk melindungi privasi dan keamanan online pengguna. Ini
-          menyediakan enkripsi data yang kuat dan mengarahkan lalu lintas
-          internet pengguna melalui server-server yang terletak di berbagai
-          lokasi di seluruh dunia.
-        </p>
-        <p class="desc-var">
-          <span>Varian Yang Tersedia :</span><br />
-          1 Bulan : Rp50.000<br />
-          3 Bulan : Rp100.000<br />
-          1 Tahun : Rp180.000
-        </p>
-        <a href="https://shopee.co.id/product/290593874/15391773365/"
-          ><button class="btn-popup">Order Via Shoppe</button></a
-        >
-        <a
-          href="https://wa.me/6283133709824?text=Hai%20Min%20Apakah%20Produk%20SurfsharkVPN%20Masih%20Ada?"
-          ><button class="btn-popup">Order Via WhatsApp</button></a
-        >
-        <div class="payment">
-          <p>Menerima Pembayaran Melalui :</p>
-          <img class="payment-logo" src="img/ewalet dana.png" />
-          <img class="payment-logo" src="img/ewalet ovo.png" />
-          <img class="payment-logo" src="img/ewalet shoppe.png" />
-        </div>
-      </div>
-    </div>
-    <!-- end of pop up 3 -->
-    <!-- pop up 4 -->
-    <div id="popup3" class="popup">
-      <div class="popup-content">
-        <span class="close" onclick="closePopup3()">&times;</span>
-        <h2>Dropbox Premium</h2>
-        <p>
-          Dropbox adalah sebuah layanan penyimpanan dan berbagi file secara
-          daring (cloud storage) yang memungkinkan pengguna untuk menyimpan,
-          mengakses, dan berbagi file dari berbagai perangkat.
-        </p>
-        <p class="desc-var">
-          <span>Varian Yang Tersedia :</span><br />
-          2 TB : Rp45.000<br />
-          5 TB : Rp90.000<br />
-        </p>
-        <a href="https://shopee.co.id/product/290593874/21679196476/"
-          ><button class="btn-popup">Order Via Shoppe</button></a
-        >
-        <a
-          href="https://wa.me/6283133709824?text=Hai%20Min%20Apakah%20Produk%20DropBox%20Premium%20Masih%20Ada?"
-          ><button class="btn-popup">Order Via WhatsApp</button></a
-        >
-        <div class="payment">
-          <p>Menerima Pembayaran Melalui :</p>
-          <img class="payment-logo" src="img/ewalet dana.png" />
-          <img class="payment-logo" src="img/ewalet ovo.png" />
-          <img class="payment-logo" src="img/ewalet shoppe.png" />
-        </div>
-      </div>
-    </div>
-    <!-- end of pop up 4 -->
-
+    <!-- section footer -->
     <footer>
       <div class="socials">
         <a href="https://www.instagram.com/wolfies_chew.store/" target="blank"
@@ -369,19 +190,21 @@
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
         <a href="#menu">Menu</a>
-        <a href="#contact">Kontak</a>
+        <a href="#contact">Kontak Kami</a>
       </div>
 
       <div class="credit">
-        <p>Made With ❤️ by <a href="">Bagas Permana</a> | &copy; 2023.</p>
+        <p>
+          Made With ❤️ by <a href=""><span>Bagas</span> Permana</a> | &copy;
+          2023.
+        </p>
       </div>
     </footer>
-
-    <!-- javascript -->
-    <script src="js/script.js"></script>
-    <!-- Script Feathericons -->
+    <!-- feathericons -->
     <script>
       feather.replace();
     </script>
+    <!-- script -->
+    <script src="script.js"></script>
   </body>
 </html>
