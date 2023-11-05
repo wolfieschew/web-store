@@ -13,52 +13,7 @@ document.addEventListener("click", function (e) {
   }
 });
 
-// pop up 1
-function openPopup() {
-  var popup = document.getElementById("popup");
-  popup.style.display = "block";
-}
-
-function closePopup() {
-  var popup = document.getElementById("popup");
-  popup.style.display = "none";
-}
-
-// pop up 2
-function openPopup1() {
-  var popup1 = document.getElementById("popup1");
-  popup1.style.display = "block";
-}
-
-function closePopup1() {
-  var popup1 = document.getElementById("popup1");
-  popup1.style.display = "none";
-}
-
-// pop up 3
-function openPopup2() {
-  var popup1 = document.getElementById("popup2");
-  popup1.style.display = "block";
-}
-
-function closePopup2() {
-  var popup1 = document.getElementById("popup2");
-  popup1.style.display = "none";
-}
-
-// pop up 4
-function openPopup3() {
-  var popup1 = document.getElementById("popup3");
-  popup1.style.display = "block";
-}
-
-function closePopup3() {
-  var popup1 = document.getElementById("popup3");
-  popup1.style.display = "none";
-}
-
-// keyframe pop up
-function openPopup() {
-  var popup = document.getElementById("popup");
-  popup.style.display = "block";
+// test alert
+function myalert() {
+  alert("Maff Menu ini Belum Berfungsi.. Maklum Admin nya lagi Magerrr");
 }
