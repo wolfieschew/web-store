@@ -1,16 +1,9 @@
-:root {
-  --primary: #b6895b;
-  --bg: #010101;
-  --bgp: #fff;
-}
-
 * {
-  margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
   outline: none;
-  border: none;
   text-decoration: none;
+  border: none;
 }
 
 html {
@@ -19,78 +12,58 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--bgp);
-  color: #fff;
   min-height: 2000px;
 }
 
-/* navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1.4rem 7%;
   background-color: #513c28;
-  border-bottom: 1px solid #513c28;
-  position: fixed; /* saat di scroll tetap di atas */
-  top: 0; /* space mentok full */
+  color: white;
+  top: 0;
   left: 0;
   right: 0;
-  z-index: 9999; /* nav agar stabil di atas */
+  z-index: 9999;
+  position: fixed;
 }
 
-/* mengatur logo "Wolfies Store" */
 .navbar .navbar-logo {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
-/* mengatur span */
 .navbar .navbar-logo span {
-  color: var(--primary);
+  color: #b6895b;
 }
 
-/* mengatur navbar 1 a */
 .navbar .navbar-nav a {
-  color: #fff;
-  font-size: 1.3rem;
-  display: inline-block; /* agar nav a tetap di posisi awal tidak menurun */
+  color: white;
   margin: 0 1rem;
-  transition: 0.5s;
+  display: inline-block;
+  font-size: 1.1rem;
+  transition: 0.8s;
 }
 
-/* mengatur nav ketika di hover */
 .navbar .navbar-nav a:hover {
-  opacity: 0.3;
-  transition: 0.5s;
+  color: #7a6149;
 }
 
-/* mengatur icon */
 .navbar .navbar-extra {
   display: none;
 }
 
 .navbar .navbar-extra a {
-  color: #fff;
-  margin: 0.5rem;
+  color: white;
 }
 
-.navbar .navbar-extra a:hover {
-  color: var(--primary);
-}
-
-#hamburger-menu {
-  display: none;
-}
-
-/* Content Section */
-
+/* section hero */
 .hero {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
-  color: black;
+  background-color: #f9e0bb;
 }
 
 .hero .content {
@@ -99,9 +72,7 @@ body {
 }
 
 .hero .content h1 {
-  font-size: 3em;
-  text-shadow: 1px 0px 3px rgba(1, 1, 3, 0.3);
-  line-height: 1.2;
+  font-size: 2rem;
 }
 
 .hero .content h1 span {
@@ -109,315 +80,211 @@ body {
 }
 
 .hero .content p {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 2.5rem;
-  line-height: 1.4;
+  color: #513c28;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
-/* Section About Tentang Kami */
+.hero .content .btn-hero {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #b6895b;
+  padding: 10px;
+  border-radius: 0.3rem;
+  transition: 0.8s;
+}
 
-.about,
-.menu {
+.hero .content .btn-hero:hover {
+  opacity: 0.5;
+}
+
+/* Section Tentang Kami  */
+.aboutus {
   padding: 8rem 7% 1.4rem;
-  color: black;
-}
-
-.about h2,
-.menu h2 {
   text-align: center;
-  font-size: 2.6rem;
-  margin-bottom: 3rem;
 }
 
-.about h2 span,
-.menu h2 span {
-  color: var(--primary);
-}
-
-.about .row {
-  display: flex;
-}
-
-.about .row .about-img {
-  flex: 1 1 45rem;
-}
-
-.about .row .about-img img {
-  width: 100%;
-}
-
-.about .row .content {
-  flex: 1 1 35rem;
-  padding: 0 1rem;
-}
-
-.about .row .content h3 {
-  font-size: 1.8rem;
+.aboutus h2 {
   margin-bottom: 1rem;
 }
 
-.about .row .content p {
-  margin-bottom: 0.8rem;
-  font-size: 1.4rem;
-  list-style: none;
+.aboutus h2 span {
+  color: #b6895b;
 }
 
-/* Section Feedback */
-
-.feedback {
-  color: #000;
-  text-align: center;
-  padding: 8rem 7% 1.4rem;
+.aboutus p {
+  color: grey;
+  font-size: 1rem;
+  margin-bottom: 5rem;
 }
 
-.feedback h2 {
-  font-size: 2.6rem;
-  margin-bottom: 1.6rem;
-}
-
-.feedback h2 span {
-  color: var(--primary);
-}
-
-.feedback .row .box-content {
-  margin-top: 3.6rem;
-}
-
-.snip1533 .fill-star-full-feedback {
-  margin-bottom: 10px;
-  color: var(--primary);
-  fill: var(--primary);
-}
-
-/* Feedback Quete Start */
-.snip1533 {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  color: #9e9e9e;
+.aboutus .row {
   display: inline-block;
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
+  border: 1px solid #f0f0f0;
+  background-color: #f0f0f0;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 1rem;
   max-width: 310px;
   min-width: 250px;
-  position: relative;
-  margin: 35px 10px 10px;
-  text-align: center;
   width: 100%;
-  background-color: #ffffff;
-  border-radius: 5px;
-  border-top: 5px solid var(--primary);
+  margin: 15px 30px 10px;
 }
 
-.snip1533 *,
-.snip1533 *:before {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
+.aboutus .row img {
+  height: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
-
-.snip1533 figcaption {
-  padding: 13% 10% 12%;
-}
-
-.snip1533 h3 {
-  color: #3c3c3c;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 24px;
-  margin: 10px 0 5px;
-}
-
-.snip1533 h4 {
-  font-weight: 400;
-  margin: 0;
-  opacity: 0.5;
-  color: #d2652d;
-}
-
-.snip1533 blockquote {
-  font-style: italic;
-  font-weight: 300;
-  margin: 0 0 20px;
-}
-/* Feedback Qute end */
-
-/* product section */
-
-.menu {
-  color: #000;
-}
-
-.menu p {
+/* section Produk */
+.product {
+  padding: 8rem 7% 1.4rem;
   text-align: center;
-  max-width: 30rem;
-  margin: auto;
-  font-size: 1.4rem;
 }
 
-.menu .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5rem;
+.product h2 {
+  margin-bottom: 1rem;
+}
+
+.product h2 span {
+  color: #b6895b;
+}
+
+.product p {
+  color: grey;
+  font-size: 1.1rem;
+  margin-bottom: 5rem;
+}
+
+.product .row {
+  display: inline-block;
+  margin-top: 1rem;
   justify-content: center;
 }
 
-.menu .row .menu-card {
+.product .row h3 {
+  font-weight: 600;
+}
+
+.product .row .menu-card {
   color: white;
   text-align: center;
   padding-bottom: 30px;
-  margin: 10px;
-  border: 1px solid #513c28;
-  border-radius: 20px;
-  background-color: #513c28;
+  margin: 20px;
+  border: 1px solid #f0f0f0;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 0.5rem;
+  background-color: #f0f0f0;
   transition: transform 0.3s;
   cursor: pointer;
 }
 
-.menu .row .menu-card:hover {
-  transform: translateY(-10px);
-}
-
-.menu .row .menu-card img {
+.product .row .menu-card .logo {
   margin-top: 30px;
-  border-radius: 20%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
   width: 50%;
 }
 
-.menu .row .menu-card-title {
-  margin: 1.5rem auto 0.5rem;
-}
-
-.menu .row .menu-card .menu-card-price {
-  margin-bottom: 10px;
-}
-
-.menu .row .menu-card .btn-menu {
-  color: white;
-  padding: 10px;
-  background-color: var(--primary);
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.menu .row .menu-card .btn-menu:hover {
-  opacity: 0.8;
-  transition: 0.5s;
-}
-
-.menu .row .menu-card .fill-star {
-  color: var(--primary);
-}
-
-.menu .row .menu-card .fill-star-full {
-  color: var(--primary);
-  fill: var(--primary);
-}
-
-/* testing pop up */
-.popup {
+.product .row .menu-card-title {
   color: #000;
-  display: none; /* Pop-up akan disembunyikan secara default */
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+  margin-bottom: 1rem;
+}
+/* section produk bagian bintang */
+.product .row .menu-card .fill-star {
+  color: gold;
 }
 
-.popup .popup-content {
-  background-color: #ffffff;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 900px;
-  height: 450px; /* Ubah tinggi sesuai kebutuhan Anda */
-  overflow-y: auto; /* Tambahkan overflow-y untuk mengaktifkan scroll jika kontennya lebih panjang */
-  margin-bottom: 70px; /* Tambahkan margin-bottom untuk memperpanjang kotak ke bawah */
-  animation: fadeIn 0.5s ease;
+.product .row .menu-card .fill-star-full {
+  color: gold;
+  fill: gold;
 }
 
-.popup .popup-content p {
-  padding-bottom: 20px;
-  font-size: 1rem;
-}
-/* var span css */
-
-.popup .popup-content .desc-var {
-  color: #513c28;
-  font-weight: bold;
+.product .row .menu-card .menu-card-price {
+  color: #f36f54;
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
-.popup-content h2 {
-  margin-bottom: 10px;
-}
-
-.popup-content p span {
-  color: var(--primary);
-  font-weight: bold;
-}
-
-.popup .popup-content .btn-popup {
-  background-color: var(--primary);
-  color: white;
-  padding: 13px;
-  margin-right: 15px;
-  margin-bottom: 10px;
+.product .row .menu-card .button a .icons {
+  background-color: #fcab92;
+  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
   border-radius: 5px;
+  transition: 0.5s;
+}
+
+.product .row .menu-card .button a .icons-unavailable {
+  background-color: #fcab92;
+  opacity: 0.5;
+  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.product .row .menu-card .button a .icons:hover {
+  opacity: 0.5;
+}
+/* Section Produk Show More */
+.product .show-morebtn {
+  margin-top: 5rem;
+}
+
+.button-23 {
+  background-color: #ffffff;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: grey;
   cursor: pointer;
-}
-
-.popup .popup-content .btn-popup:hover {
-  opacity: 0.6;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
+  display: inline-block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 5px 10px;
+  position: relative;
+  text-align: center;
   text-decoration: none;
-  cursor: pointer;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
 }
 
-/* Payment Div */
-
-.popup .popup-content .payment {
-  display: flex;
-  margin-top: 5px;
+.button-23:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow 0.2s;
 }
 
-.popup .popup-content .payment-logo {
-  margin-left: 10px;
-  height: 24px;
-  margin-top: px;
+.button-23:active {
+  background-color: #f7f7f7;
+  border-color: #000000;
+  transform: scale(0.96);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.button-23:disabled {
+  border-color: #dddddd;
+  color: #dddddd;
+  cursor: not-allowed;
+  opacity: 1;
 }
-
-/* footer */
+/* section footer */
 
 footer {
-  background-color: var(--primary);
+  background-color: #513c28;
   text-align: center;
   padding: 1rem 0 3rem;
   margin-top: 3rem;
@@ -448,29 +315,36 @@ footer .links a {
 
 footer .credit {
   font-size: 0.8rem;
+  color: #fff;
 }
 
 footer .credit a {
-  color: var(--bg);
+  color: #fff;
   font-weight: 700;
   font-size: 1rem;
 }
 
-/* media quaries */
-/* Laptop Dan PC */
+footer .credit a span {
+  color: #b6895b;
+}
+/* PC */
 @media (max-width: 1366px) {
   html {
-    font-size: 75%;
+    font-size: 85%;
   }
 }
 
 /* Tablet */
 @media (max-width: 794px) {
-  html {
-    font-size: 62.5%;
+  * {
+    outline: none;
   }
 
-  #hamburger-menu {
+  html {
+    font-size: 75%;
+  }
+
+  .navbar .navbar-extra {
     display: inline-block;
   }
 
@@ -478,8 +352,8 @@ footer .credit a {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: var(--primary);
-    width: 30rem;
+    background-color: #b6895b;
+    width: 25rem;
     height: 100vh;
     transition: 0.3s;
   }
@@ -492,95 +366,23 @@ footer .credit a {
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
-    font-size: 2rem;
-  }
-
-  .navbar .navbar-extra .hidden-logo {
-    display: none;
-  }
-
-  .navbar .navbar-extra {
-    display: block;
-  }
-
-  .about .row {
-    flex-wrap: wrap;
-  }
-
-  .about .row .content p,
-  .menu {
-    font-size: 1.6rem;
-  }
-
-  .menu p {
-    font-size: 1.3rem;
-  }
-
-  .popup .popup-content {
-    height: 340px;
-    width: 90%;
-    border-radius: 10px;
-  }
-
-  .popup .popup-content .payment-logo {
-    margin-left: 10px;
-    height: 15px;
+    font-size: 1.8rem;
   }
 }
 
-/* HP */
-@media (max-width: 450px) {
+/* Hp */
+@media (max-width: 459px) {
+  * {
+    outline: none;
+  }
+
   html {
-    font-size: 60%;
-  }
-  .menu p {
-    font-size: 1.4rem;
+    font-size: 70%;
   }
 
-  .navbar .navbar-extra {
-    display: block;
-  }
-
-  .popup .popup-content {
-    height: 345px;
-    width: 90%;
-    border-radius: 10px;
-  }
-
-  .popup .popup-content .btn-popup {
-    font-size: 10px;
-    padding: 10px;
-  }
-
-  .popup .popup-content .payment-logo {
-    margin-left: 10px;
-    height: 14px;
-  }
-
-  .feedback {
-    padding: 8rem 7% 1.4rem;
-  }
-
-  .feedback h2 {
-    margin-top: 80px;
-  }
-
-  .feedback p {
-    font-size: 1.4rem;
-  }
-}
-
-/* My Old Oppo Device */
-@media (max-width: 360px) {
-  .popup .popup-content .payment-logo {
-    height: 10px;
-  }
-
-  .navbar .navbar-extra .hidden-logo {
-    display: none;
-  }
-
-  .popup .popup-content {
-    overflow: hidden;
+  .aboutus .row {
+    max-width: 210px;
+    min-width: 150px;
+    width: 80%;
   }
 }
